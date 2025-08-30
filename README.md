@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VELA | Tienda de Calzado</title>
+  <!-- Favicon con el icono V -->
+  <link rel="icon" href="vela-icon.png" type="image/png">
   <style>
-    /* ====== Estilos Generales ====== */
     body {
       margin: 0;
       font-family: 'Segoe UI', Arial, sans-serif;
@@ -25,10 +26,10 @@
       z-index: 1000;
     }
 
-    header h1 {
-      font-size: 28px;
-      letter-spacing: 2px;
-      font-weight: bold;
+    header img {
+      height: 60px;
+      margin-right: 35px;
+      display: block;
     }
 
     nav a {
@@ -43,7 +44,6 @@
       color: #ffcc00;
     }
 
-    /* ====== Hero ====== */
     .hero {
       height: 80vh;
       background: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
@@ -65,6 +65,16 @@
     .hero-content {
       position: relative;
       z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Logo V en hero */
+    .hero-content img {
+      height: 90px;
+      margin-bottom: 25px;
+      display: block;
     }
 
     .hero h2 {
@@ -94,7 +104,6 @@
       transform: scale(1.05);
     }
 
-    /* ====== Productos ====== */
     .productos {
       padding: 60px 20px;
       text-align: center;
@@ -147,13 +156,21 @@
       margin-bottom: 15px;
     }
 
-    /* ====== Footer ====== */
     footer {
       background: #000;
       color: #fff;
       padding: 40px 20px;
       text-align: center;
       margin-top: 40px;
+    }
+
+    /* Logo VÉLA texto en footer */
+    footer img {
+      height: 35px;
+      margin-bottom: 15px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     footer p {
@@ -168,9 +185,9 @@
 </head>
 <body>
 
-  <!-- 🔹 Encabezado -->
+  <!-- Encabezado con logo principal -->
   <header>
-    <h1>VÉLA</h1>
+    <img src="vela-logo.png" alt="Logo VELA">
     <nav>
       <a href="#">Inicio</a>
       <a href="#productos">Productos</a>
@@ -178,16 +195,17 @@
     </nav>
   </header>
 
-  <!-- 🔹 Sección principal (Hero) -->
+  <!-- Sección principal (Hero) con icono V -->
   <section class="hero">
     <div class="hero-content">
+      <img src="vela-icon.png" alt="Icono VELA">
       <h2>Calzado que define tu estilo</h2>
       <p>Encuentra los mejores modelos de la marca VÉLA</p>
       <a href="#productos" class="btn">Ver colección</a>
     </div>
   </section>
 
-  <!-- 🔹 Productos -->
+  <!-- Productos -->
   <section id="productos" class="productos">
     <h2>Nuestros Productos</h2>
     <div class="grid">
@@ -218,8 +236,9 @@
     </div>
   </section>
 
-  <!-- 🔹 Footer -->
+  <!-- Footer con logo VÉLA texto -->
   <footer id="contacto">
+    <img src="vela-text.png" alt="VÉLA">
     <p>© 2025 VELA - Todos los derechos reservados.</p>
     <p>📧 Contacto: <a href="mailto:contacto@vela.com">contacto@vela.com</a></p>
     <p>📍 Ubicación: San Francisco del Rincon, Gto, MX</p>
