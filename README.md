@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -328,6 +327,3 @@
     <p>📧 Contacto: <a class="email" href="mailto:velacalzado@gmail.com">velacalzado@gmail.com</a></p>
     <p>📍 Ubicación: San Francisco del Rincon, Gto, MX</p>
   </footer>
-
-</body>
-</html>
